@@ -1,18 +1,17 @@
-// var i = 100; 
-// while (i > 0) {
-// i = i/2;
-// if (i%2 != 0) {
-// 	continue;
-// }
-// document.write(i + '<br/>');
-// }s
 
+var array = new Array(10);
 
-// ДЗ 2
+console.log(array);
 
-for (var i = 1; i <= 9; i++) {
-	for (var j = 1; j <= 9; j++)
-	}
-	i = i*j;
-	document.write(i);
+for(var i = 0; i < array.length; i++) {
+	array[i] = new Array(10);
 }
+
+for(var j = 0; j < array.length; j++) {
+	for (var n = 0; n < array[j].length; n++) {
+		array[j][n] = j*n;
+	}
+}
+
+alert(array[3][7]);
+
